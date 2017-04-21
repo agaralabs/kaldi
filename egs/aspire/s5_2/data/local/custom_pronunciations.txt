@@ -1,0 +1,12 @@
+<unk>	oov
+minute	m ih n ih t
+lipid	l ih p ih d
+heart	hh ah r t
+feet	f ih t
+two	t uh
+kg	k ay jh iy
+kg	k ay z iy
+kgs	k ay jh iy z
+angiogram	ae n jh iy ow g r ah m
+angioplasty	ae n jh iy ow p l ah s t iy
+angioplasty	ae n jh iy ow p l ah sh t iy

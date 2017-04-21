@@ -1,0 +1,7 @@
+words_8k/
+words_16k/
+words_audio/
+sentences_audio/
+sentences_8k/
+local/g2p/
+local/model-b.key

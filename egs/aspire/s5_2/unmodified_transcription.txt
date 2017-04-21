@@ -1,0 +1,72 @@
+F1-1.wav:
+height is six feet two inches 
+F1-2.wav:
+wait is ninety <unk> 
+F1-3.wav:
+<unk> <unk> 
+F1-4.wav:
+<unk> is seventy two beets permanent 
+F1-5.wav:
+<unk> is thirty five inches 
+F1-6.wav:
+<unk> is <unk> 
+F2-1.wav:
+hi do six feet branches 
+F2-2.wav:
+<unk> 
+F2-3.wav:
+<unk> is <unk> 
+F2-4.wav:
+hot it's seventy <unk> beach spreading nick 
+F2-5.wav:
+<unk> it's just 
+F2-6.wav:
+<unk> it was tied to two inches 
+F3-1.wav:
+hi does six feet the wind just 
+F3-2.wav:
+wages ninety cullen 
+F3-3.wav:
+<unk> oh what a beep 
+F3-4.wav:
+hundred and seventy two beats a minute 
+F3-5.wav:
+<unk> and just 
+F3-6.wav:
+waist size is <unk> 
+M1-1.wav:
+hi it's succeed doing this 
+M1-2.wav:
+rape is ninety <unk> 
+M1-3.wav:
+<unk> 
+M1-4.wav:
+hard sleep it's seventy to beat spent a minute 
+M1-5.wav:
+<unk> it's thirty five and just 
+M1-6.wav:
+<unk> <unk> they're doing 
+M2-1.wav:
+hi this six feet doing chips 
+M2-2.wav:
+<unk> 
+M2-3.wav:
+<unk> eighty 
+M2-4.wav:
+heart rate is seventy two beats a minute 
+M2-5.wav:
+<unk> thirty five inches 
+M2-6.wav:
+<unk> that he doing just 
+M3-1.wav:
+hi to six <unk> 
+M3-2.wav:
+is ninety <unk> 
+M3-3.wav:
+<unk> is <unk> 
+M3-4.wav:
+hi jake is seventy to bitch about a minute 
+M3-5.wav:
+<unk> thirty five inches 
+M3-6.wav:
+<unk>
