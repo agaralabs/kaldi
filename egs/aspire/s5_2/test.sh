@@ -33,5 +33,5 @@ echo $frame_subsampling_factor > exp/frame_subsampling_factor
 
 local/multi_condition/get_ctm_conf.sh data/test data/lang exp/decode-$fname
 
-#cat exp/decode-$fname/score_10/test.ctm
+cat exp/decode-$fname/score_1/test.ctm
 
