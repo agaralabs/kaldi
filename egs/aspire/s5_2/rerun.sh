@@ -38,21 +38,20 @@ mkdir -p data/local/lang
 sh create_test_files.sh
 
 cp data/local/corpus.txt data/corpus.txt.generated
-seq 1 20 | xargs -I{} cat data/local/corpus.txt >> data/corpus.txt.generated
-python generate_corpus.py >> data/corpus.txt.generated
-
 grep -oE "[A-Za-z\\'\\.\\_]{1,}" data/corpus.txt.generated | sort | uniq > data/local/words.txt
+
+seq 1 200 | xargs -I{} cat data/local/corpus.txt >> data/corpus.txt.generated
+# Uses data/local/words.txt which was generated above
+python generate_random_wordlist.py >> data/corpus.txt.generated
+# Make sure it does not contain new words which are not in data/local/words.txt
+# If it does contain new words, rerun the same 'grep' command which 
+#  generates the data/local/words.txt after this command
+python generate_corpus.py >> data/corpus.txt.generated
 
 cat data/local/words.txt | tr '[:lower:]' '[:upper:]' | g2p.py --model local/model-b.key --apply - | tr '[:upper:]' '[:lower:]' > $dict_src/lexicon.txt
 cat data/local/custom_pronunciations.txt >> $dict_src/lexicon.txt
 
 rm -f data/local/dict/lexiconp.txt
-
-#cp ../s5/data/local/dict/lexiconp.txt data/local/dict/lexiconp.txt
-#cat data/local/words.txt | tr '[:lower:]' '[:upper:]' | g2p.py --model local/model-b.key --apply - | tr '[:upper:]' '[:lower:]' | sed -e 's/\t/\t1.0\t/g' >> $dict_src/lexiconp.txt
-#cat data/local/custom_pronunciations.txt | sed -e 's/\t/\t1.0\t/g' >> $dict_src/lexiconp.txt
-#
-#rm -f data/local/dict/lexicon.txt
 
 ngram-count -text data/corpus.txt.generated -order 3 -limit-vocab -vocab data/local/words.txt -unk -map-unk "<unk>" -interpolate -lm $lm_src
  
